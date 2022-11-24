@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <% include partials/head %>
+    <div class="wrapper">
+        <h1><%= title %></h1>
+        <div class="wrap"></div>
+        <body>
+        
+          <div style="margin:0 auto ; width:50%; padding:20px">
+            <form action="/mobiles/create" method="post">
+              <label>Name</label>
+              <input type="text" name="name">
+              <br /> <br /> <br /> <br />
+              <label>Daily Usage</label>
+              <input type="number" name="daily_usage">
+              <br /> <br /> <br /> <br />
+              <label>Educational Usage</label>
+              <input type="number" name="educational_usage">
+              <br /> <br /> <br /> <br />
+              <label>Shopping Usage</label>
+              <input type="number" name="shopping_usage">
+              <br /> <br /> <br /> <br />
+              <label>Searching Usage</label>
+              <input type="number" name="searching_usage">
+              <br /> <br /> <br /> <br />
+              <label>Social Usage</label>
+              <input type="number" name="social_usage">
+              <br /> <br /> <br /> <br />
+              <label>Date Created</label>
+              <input type="date" name="date_created">
+              <br /> <br /> <br /> <br />
+              <button>submit</button>
+            </form>
+          </div>
+        </body>
+    </div>
+</div>
+
+</html>

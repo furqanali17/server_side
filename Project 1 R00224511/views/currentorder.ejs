@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    
+        <% include partials/head %>
+        <div class="wrapper">
+            <h1><%= title %></h1>
+            <div class="wrap"></div>
+            <body>
+            <table class="table table-inverse">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Daily Usage</th>
+        <th>Educational Usage</th>
+        <th>Shopping Usage</th>
+        <th>Searching Usage</th>
+        <th>Social Usage</th>
+        <th>Date Created</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% for(var i=0; i < mobilelist.length; i++) { %>
+     <tr>
+
+       <td><%= mobilelist[i].name %></td>
+       <td><%= mobilelist[i].daily_usage %></td>
+       <td><%= mobilelist[i].educational_usage  %></td>
+       <td><%= mobilelist[i].shopping_usage %></td>
+       <td><%= mobilelist[i].searching_usage %></td>
+       <td><%= mobilelist[i].social_usage %></td>
+       <td><%= mobilelist[i].date_created %></td>
+
+     </tr>
+  <% } %>
+    </tbody>
+
+  </table>
+
+</body>
+</div>
+</div>
+
+</html>
